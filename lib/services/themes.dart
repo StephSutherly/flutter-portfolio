@@ -10,4 +10,7 @@ class ThemeService {
   ThemeService._internal();
 
   static const primary = Color(0xff304ffe);
+  static const primaryLight = Color(0xff7a7cff);
+  static const dark = Color(0xff000000);
+  static const light = Color(0xffffffff);
 }

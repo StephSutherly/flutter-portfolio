@@ -22,3 +22,14 @@ flutter:
   uses-material-design: true
   assets:
     - images/
+  fonts:
+    - family: LobsterTwo
+      fonts:
+        - asset: fonts/LobsterTwo-Regular.ttf
+        - asset: fonts/LobsterTwo-Italic.ttf
+          style: italic
+        - asset: fonts/LobsterTwo-BoldItalic.ttf
+          weight: 700
+          style: italic
+        - asset: fonts/LobsterTwo-Bold.ttf
+          weight: 700
