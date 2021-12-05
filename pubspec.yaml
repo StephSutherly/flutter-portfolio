@@ -33,3 +33,10 @@ flutter:
           style: italic
         - asset: fonts/LobsterTwo-Bold.ttf
           weight: 700
+    - family: ArimaMadurai
+      fonts:
+        - asset: fonts/ArimaMadurai-Regular.ttf
+        - asset: fonts/ArimaMadurai-Bold.ttf
+          weight: 700
+        - asset: fonts/ArimaMadurai-ExtraLight.ttf
+          weight: 200

@@ -13,4 +13,10 @@ class ThemeService {
   static const primaryLight = Color(0xff7a7cff);
   static const dark = Color(0xff000000);
   static const light = Color(0xffffffff);
+
+  static const mediumText = TextStyle(
+    fontFamily: 'ArimaMadurai',
+    fontSize: 18.0,
+    color: ThemeService.dark,
+  );
 }
