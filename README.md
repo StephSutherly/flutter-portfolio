@@ -2,7 +2,9 @@
 
 #### WORK IN PROGRESS
 This application will be developed in iterations to showcase my flutter experience and progress.
-Please checkout/review the feature branch: feature/about-me
+In addition to these iterations, I am also working through Flutter tutorials and I will include them in this repo as I progress  
+
+**Please checkout/review the feature branch: feature/about-me**
 
 ## Iteration 1 About (CURRENT):
 Simple static app to demonstrate basic scaffold, layout, routing and tests.
