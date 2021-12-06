@@ -32,6 +32,12 @@ class ThemeService {
     color: ThemeService.dark,
   );
 
+  static const mediumTextLight = TextStyle(
+    fontFamily: 'ArimaMadurai',
+    fontSize: 25.0,
+    color: ThemeService.light,
+  );
+
   static const largeDisplayText = TextStyle(
     fontFamily: 'LobsterTwo',
     fontSize: 30.0,
