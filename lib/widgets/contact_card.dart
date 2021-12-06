@@ -9,18 +9,12 @@ class ContactCard extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
+    return Card(
       margin: const EdgeInsets.symmetric(vertical: 10.0, horizontal: 60.0),
-      padding: const EdgeInsets.all(10.0),
       color: ThemeService.light,
-      child: Row(
-        children: [
-          Icon(icon),
-          const SizedBox(
-            width: 10.0,
-          ),
-          Text(text),
-        ],
+      child: ListTile(
+        leading: Icon(icon, color: ThemeService.dark),
+        title: Text(text),
       ),
     );
   }
