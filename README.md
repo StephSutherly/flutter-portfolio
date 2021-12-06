@@ -1,6 +1,7 @@
 # flutter-portfolio
-### WORK IN PROGRESS
+## WORK IN PROGRESS
 This application will be developed in iterations to showcase my flutter experience and progress.
+In addition to these iterations, I am also working through Flutter tutorials and I will include them in this repo as I progress. 
 
 ## Iteration 1 About (CURRENT):
 Simple static app to demonstrate basic scaffold, layout, routing and tests.
