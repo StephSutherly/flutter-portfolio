@@ -2,14 +2,14 @@ import 'package:flutter/material.dart';
 import '../../services/themes.dart';
 import 'dart:math';
 
-class Dice extends StatefulWidget {
-  const Dice({Key? key}) : super(key: key);
+class DiceThrower extends StatefulWidget {
+  const DiceThrower({Key? key}) : super(key: key);
 
   @override
-  State<Dice> createState() => _DiceState();
+  State<DiceThrower> createState() => _DiceThrowerState();
 }
 
-class _DiceState extends State<Dice> {
+class _DiceThrowerState extends State<DiceThrower> {
   int leftDiceNumber = 1;
   int rightDiceNumber = 1;
 
@@ -96,3 +96,29 @@ class _DiceState extends State<Dice> {
 int throwDice() {
   return Random().nextInt(6) + 1;
 }
+
+// TODO Refactor Die into Dice widgets for reusability
+// class Dice extends StatefulWidget {
+//   const Dice(this.diceNumber, {Key? key}) : super(key: key);
+//
+//   final int diceNumber;
+//
+//   @override
+//   _DiceThrowerState createState() => _DiceThrowerState();
+// }
+//
+// class _DiceState extends State<DiceThrower> {
+//   @override
+//   Widget build(BuildContext context) {
+//     return Expanded(
+//       child: TextButton(
+//         onPressed: () {
+//           setState(() {
+//             widget.diceNumber = throwDice();
+//           });
+//         },
+//         child: Image.asset('images/dice$widget.diceNumber.png'),
+//       ),
+//     );
+//   }
+// }

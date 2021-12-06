@@ -4,5 +4,5 @@ import 'screens/about.dart';
 import 'screens/learningProjects/dice.dart';
 
 void main() {
-  runApp(const Dice());
+  runApp(const DiceThrower());
 }
