@@ -25,6 +25,7 @@ class ThemeService {
   static const primaryAccentDark = Color(0xff087f23);
 
   static const secondaryAccent = Color(0xffffff00);
+  static const secondaryAccentLight = Color(0xffffffb3);
 
   static const mediumText = TextStyle(
     fontFamily: 'ArimaMadurai',

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_portfolio/widgets/description_card.dart';
 import '../services/themes.dart';
 import '../widgets/contact_card.dart';
 
@@ -21,12 +22,12 @@ class Home extends StatelessWidget {
           centerTitle: true,
         ),
         body: const Center(
-          child: Card(
-            color: ThemeService.secondaryLight,
-            child: Padding(
-              padding: EdgeInsets.all(8.0),
-              child: Text('Home Page Placeholder',
-                  style: ThemeService.largeDisplayText),
+          child: DescriptionCard(
+            ThemeService.secondaryLight,
+            'Home Page Placeholder',
+            TextStyle(
+              fontSize: 20.0,
+              color: ThemeService.dark,
             ),
           ),
         ),

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_portfolio/widgets/description_card.dart';
 import '../../services/themes.dart';
 import 'dart:math';
 
@@ -42,20 +43,11 @@ class _DiceThrowerState extends State<DiceThrower> {
                         rightDiceNumber = throwDice();
                       });
                     },
-                    child: const Card(
-                      color: ThemeService.primaryAccentDark,
-                      child: Padding(
-                        padding: EdgeInsets.symmetric(
-                          vertical: 20.0,
-                          horizontal: 20.0,
-                        ),
-                        child: Text(
-                          'Click to roll both die at once or click dice to roll one at a time',
-                          style: TextStyle(
-                            color: ThemeService.light,
-                            fontSize: 20.0,
-                          ),
-                        ),
+                    child: const DescriptionCard(
+                      ThemeService.primaryAccentDark,
+                      'Click to roll both die at once or click dice to roll one at a time',
+                      TextStyle(
+                        fontSize: 20.0,
                       ),
                     ),
                   ),
