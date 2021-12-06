@@ -23,22 +23,28 @@ class About extends StatelessWidget {
         body: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            const CircleAvatar(
-              radius: 80.0,
-              backgroundImage: AssetImage('images/stephMeadows.jpeg'),
+            const Padding(
+              padding: EdgeInsets.all(10.0),
+              child: CircleAvatar(
+                radius: 60.0,
+                backgroundImage: AssetImage('images/stephMeadows.jpeg'),
+              ),
             ),
             Column(
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: const [
                 Text(
                   'Stephanie Lara Sutherland',
-                  style: TextStyle(
-                      fontFamily: 'LobsterTwo',
-                      fontSize: 25.0,
-                      color: ThemeService.dark,
-                      fontStyle: FontStyle.italic),
+                  style: ThemeService.largeDisplayText,
                 ),
                 Text('FLUTTER DEVELOPER', style: ThemeService.mediumText),
+                SizedBox(
+                  height: 20.0,
+                  width: 150.0,
+                  child: Divider(
+                    color: ThemeService.primaryDark,
+                  ),
+                ),
                 ContactCard(Icons.phonelink_ring, '+44 7094285454'),
                 ContactCard(Icons.email, 'stephanielarasutherland@gmail.com'),
                 ContactCard(Icons.code, 'StephanieLaraScully'),

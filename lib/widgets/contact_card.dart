@@ -10,7 +10,7 @@ class ContactCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Card(
-      margin: const EdgeInsets.symmetric(vertical: 10.0, horizontal: 60.0),
+      margin: const EdgeInsets.symmetric(vertical: 10.0, horizontal: 30.0),
       color: ThemeService.light,
       child: ListTile(
         leading: Icon(icon, color: ThemeService.dark),

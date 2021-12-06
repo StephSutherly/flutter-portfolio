@@ -31,4 +31,11 @@ class ThemeService {
     fontSize: 18.0,
     color: ThemeService.dark,
   );
+
+  static const largeDisplayText = TextStyle(
+    fontFamily: 'LobsterTwo',
+    fontSize: 30.0,
+    color: ThemeService.dark,
+    fontStyle: FontStyle.italic,
+  );
 }
