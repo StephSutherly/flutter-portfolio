@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:audioplayers/audioplayers.dart';
+import '../../widgets/learningProjects/xylophone_key_button.dart';
 
 class Xylophone extends StatelessWidget {
   const Xylophone({Key? key}) : super(key: key);
@@ -22,30 +22,6 @@ class Xylophone extends StatelessWidget {
               XylophoneNoteButton(Colors.purple, 7),
             ],
           ),
-        ),
-      ),
-    );
-  }
-}
-
-class XylophoneNoteButton extends StatelessWidget {
-  const XylophoneNoteButton(this.color, this.note, {Key? key})
-      : super(key: key);
-
-  final Color color;
-  final int note;
-
-  @override
-  Widget build(BuildContext context) {
-    return Expanded(
-      child: TextButton(
-        onPressed: () {
-          final player = AudioCache();
-          player.play('note$note.wav');
-        },
-        child: const Text(''),
-        style: TextButton.styleFrom(
-          backgroundColor: color,
         ),
       ),
     );
